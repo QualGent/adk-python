@@ -142,7 +142,7 @@ def content_to_message_param(
   message_block = []
   for part in content.parts or []:
     # Image data is not supported in Claude for model turns.
-    if _is_image_part(part):
+    if _is_image_part(part) and content.role != "user":
       logger.warning("Image data is not supported in Claude for model turns.")
       continue
 
