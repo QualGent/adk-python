@@ -115,3 +115,6 @@ CLAUDE.md
 .rooignore
 .bolt/
 .v0/
+
+# Claude Code
+**/settings.local.json
